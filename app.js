@@ -10,7 +10,7 @@ angular.module('ControllerAsApp', [])
 ShoppingListController.$inject = ['ShoppingListFactory'];
 function ShoppingListController(ShoppingListFactory) {
   $scope.list1 = [];
-  $scope.list2 = []];
+  $scope.list2 = [];
 
   // Use factory to create new shopping list service
   var shoppingList1 = ShoppingListFactory();
