@@ -20,12 +20,19 @@ function ShoppingListController(ShoppingListFactory) {
 
   console.log('LISTS', list1, list2);
 
-  list1.addItem = function () {
-    shoppingList.addItem(list1.itemName, list1.itemQuantity);
-  }
+  list1.addItem = function (name, quantity) {
+    shoppingList1.addItem(name, quantity);
+  };
 
   list1.removeItem = function (itemIndex) {
-    shoppingList.removeItem(itemIndex);
+    shoppingList1.removeItem(itemIndex);
+  };
+  list2.addItem = function (name, quantity) {
+    shoppingList2.addItem(name, quantity);
+  };
+
+  list2.removeItem = function (itemIndex) {
+    shoppingList2.removeItem(itemIndex);
   };
 }
 
