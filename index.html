@@ -31,24 +31,24 @@
   <div class="row">
 
     <!-- To Buy List -->
-    <div class="col-md-6" ng-controller="ShoppingListController1 as buy">
+    <div class="col-md-6" ng-controller="ShoppingListController1 as list1">
      <h2>To Buy:</h2>
      <ul>
        <li>Buy 10 cookies <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
        <li>Buy 10 cookies <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
      </ul>
-     <p>ITEMS: {{buy.list1.items.length}}</p>
-     <div class="emptyMessage" ng-if="buy.list1.items.length == 0">Everything is bought!</div>
+     <p>ITEMS: {{list1.items.length}}</p>
+     <div class="emptyMessage" ng-if="list1.items.length == 0">Everything is bought!</div>
     </div>
 
     <!-- Already Bought List -->
-    <div class="col-md-6" ng-controller="ShoppingListController2 as bought">
+    <div class="col-md-6" ng-controller="ShoppingListController2 as list2">
      <h2>Already Bought:</h2>
      <ul>
        <li>Bought 10 cookies</li>
      </ul>
-     <p>ITEMS: {{bought.list2.items.length}}</p>
-     <div class="emptyMessage" ng-if="bought.list2.items.length == 0">Nothing bought yet.</div>
+     <p>ITEMS: {{list2.items.length}}</p>
+     <div class="emptyMessage" ng-if="list2.items.length == 0">Nothing bought yet.</div>
     </div>
   </div>
 </div>
