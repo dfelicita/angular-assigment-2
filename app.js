@@ -18,6 +18,10 @@ function ShoppingListController(ShoppingListFactory) {
   var shoppingList2 = ShoppingListFactory();
   list2.items = shoppingList2.getItems();
 
+  list1.addItem('Cookies', 100);
+  list1.addItem('Sodas', 12);
+  list1.addItem('Beers', 24);
+
   console.log('LISTS', list1, list2);
 
   list1.addItem = function (name, quantity) {
