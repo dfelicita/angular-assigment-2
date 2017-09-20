@@ -2,7 +2,7 @@
 'use strict';
 
 angular.module('ControllerAsApp', [])
-.controller('ShoppingListController', ShoppingListController1)
+.controller('ShoppingListController', ShoppingListController)
 // .controller('ShoppingListController2', ShoppingListController2)
 .factory('ShoppingListFactory', ShoppingListFactory);
 
