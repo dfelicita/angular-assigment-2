@@ -14,8 +14,6 @@ function ShoppingListController1(ShoppingListFactory) {
   // Use factory to create new shopping list service
   var shoppingList1 = ShoppingListFactory();
   
-  list1.items = shoppingList1.getItems();
-  
   list1.addItem = function (name, quantity) {
     shoppingList1.addItem(name, quantity);
   };
@@ -24,7 +22,12 @@ function ShoppingListController1(ShoppingListFactory) {
     shoppingList1.removeItem(itemIndex);
   };
   
-  
+  list1.addItem('Cookies', 10);
+  list1.addItem('Sodas', 12);
+  list1.addItem('Beers', 24);
+  list1.items = shoppingList1.getItems();
+  console.log('List 1', list1);
+
 }
 
 
@@ -45,6 +48,8 @@ function ShoppingListController2(ShoppingListFactory) {
   list2.removeItem = function (itemIndex) {
     shoppingList.removeItem(itemIndex);
   };
+
+  console.log('List 2', list2);
 }
 
 
