@@ -23,8 +23,15 @@ function ShoppingListController1(ShoppingListFactory) {
   };
   
   list1.addItem('Cookies', 10);
-  list1.addItem('Sodas', 12);
+  list1.addItem('Ginger Ale', 12);
   list1.addItem('Beers', 24);
+  list1.addItem('Almond Milk', 2);
+  list1.addItem('Burgers', 12);
+  list1.addItem('Chocolate Bars', 5);
+  list1.addItem('Portein Bars', 30);
+  list1.addItem('Chips', 10);
+  list1.addItem('Tomatoes', 15);
+  list1.addItem('Onios', 5);
   list1.items = shoppingList1.getItems();
 
 }
