@@ -7,7 +7,7 @@ angular.module('ControllerAsApp', [])
 .factory('ShoppingListFactory', ShoppingListFactory);
 
 // LIST #1 - controller
-ShoppingListController1.$inject = ['ShoppingListFactory'];
+ShoppingListController.$inject = ['ShoppingListFactory'];
 function ShoppingListController(ShoppingListFactory) {
   var list1 = this;
   var list2 = this;
