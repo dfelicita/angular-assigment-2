@@ -18,7 +18,7 @@ function ShoppingListController(ShoppingListFactory) {
   var shoppingList2 = ShoppingListFactory();
   list2.items = shoppingList2.getItems();
 
-
+  console.log('LISTS', list1, list2);
 
   list1.addItem = function () {
     shoppingList.addItem(list1.itemName, list1.itemQuantity);
