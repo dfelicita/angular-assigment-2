@@ -37,8 +37,8 @@
        <li>Buy 10 cookies <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
        <li>Buy 10 cookies <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
      </ul>
-     <p>ITEMS: {{list1.items.length}}</p>
-     <div class="emptyMessage" ng-if="list1.items.length == 0">Everything is bought!</div>
+     <p>ITEMS: {{ShoppingListController1.list1.items.length}}</p>
+     <div class="emptyMessage" ng-if="ShoppingListController1.list1.items.length == 0">Everything is bought!</div>
     </div>
 
     <!-- Already Bought List -->
@@ -47,8 +47,8 @@
      <ul>
        <li>Bought 10 cookies</li>
      </ul>
-     <p>ITEMS: {{list2.items.length}}</p>
-     <div class="emptyMessage" ng-if="list2.items.length == 0">Nothing bought yet.</div>
+     <p>ITEMS: {{ShoppingListController2.list2.items.length}}</p>
+     <div class="emptyMessage" ng-if="ShoppingListController2.list2.items.length == 0">Nothing bought yet.</div>
     </div>
   </div>
 </div>
