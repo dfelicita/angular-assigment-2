@@ -34,10 +34,8 @@
     <div class="col-md-6" ng-controller="ShoppingListController1 as list1">
      <h2>To Buy:</h2>
      <ul>
-       <li>Buy 10 cookies <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
-       <li>Buy 10 cookies <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
+       <li ng-repeat="products in list1.items">Buy {{products.quantity}} {{products.name}} <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
      </ul>
-     <p>ITEMS: {{list1.items.length}}</p>
      <div class="emptyMessage" ng-if="list1.items.length == 0">Everything is bought!</div>
     </div>
 
@@ -45,9 +43,8 @@
     <div class="col-md-6" ng-controller="ShoppingListController2 as list2">
      <h2>Already Bought:</h2>
      <ul>
-       <li>Bought 10 cookies</li>
+       <li ng-repeat="products in list2.items">Bought {{products.quantity}} {{products.name}}</li>
      </ul>
-     <p>ITEMS: {{list2.items.length}}</p>
      <div class="emptyMessage" ng-if="list2.items.length == 0">Nothing bought yet.</div>
     </div>
   </div>

@@ -26,7 +26,6 @@ function ShoppingListController1(ShoppingListFactory) {
   list1.addItem('Sodas', 12);
   list1.addItem('Beers', 24);
   list1.items = shoppingList1.getItems();
-  console.log('List 1', list1);
 
 }
 
@@ -49,7 +48,6 @@ function ShoppingListController2(ShoppingListFactory) {
     shoppingList.removeItem(itemIndex);
   };
 
-  console.log('List 2', list2);
 }
 
 
