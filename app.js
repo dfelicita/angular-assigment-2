@@ -7,8 +7,8 @@ angular.module('ControllerAsApp', [])
 .factory('ShoppingListFactory', ShoppingListFactory);
 
 // LIST #1 - controller
-ShoppingListController1.$inject = ['ShoppingListFactory'];
-function ShoppingListController1(ShoppingListFactory) {
+ShoppingListController1.$inject = ['ShoppingListFactory', '$scope'];
+function ShoppingListController1(ShoppingListFactory, $scope) {
   var list1 = this;
   
   // Use factory to create new shopping list service
@@ -19,8 +19,7 @@ function ShoppingListController1(ShoppingListFactory) {
   };
 
   list1.removeItem = function (itemIndex) {
-    console.log('this', this);
-    //ShoppingListController2.addItem(list1.items[itemIndex].name, list1.items[itemIndex].quantity);
+    console.log('Scope', $scope);
     shoppingList1.removeItem(itemIndex);
 
   };
