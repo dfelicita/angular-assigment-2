@@ -20,7 +20,7 @@ function ShoppingListController1(ShoppingListFactory) {
 
   list1.removeItem = function (itemIndex) {
     // console.log(ShoppingListController2.addItem);
-    ShoppingListController2.addItem(list1.items[itemIndex].name, list1.items[itemIndex].quantity);
+    ShoppingListController2.list2.addItem(list1.items[itemIndex].name, list1.items[itemIndex].quantity);
     shoppingList1.removeItem(itemIndex);
 
   };
