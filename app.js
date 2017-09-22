@@ -19,7 +19,8 @@ function ShoppingListController1(ShoppingListFactory, $scope) {
   };
 
   list1.removeItem = function (itemIndex) {
-    console.log('Scope', $scope);
+    // console.log('Scope', $scope);
+    $scope.$parent.list2.addItem(list1.items[itemIndex].name, list1.items[itemIndex].quantity);
     shoppingList1.removeItem(itemIndex);
 
   };
